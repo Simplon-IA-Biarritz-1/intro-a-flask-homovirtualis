@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Question 4 - Saisie des données</title>
+        <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+        <h1>Question 4 - Saisie des données</h1>
+
+        <div><p><i>Les champs vides ne sont pas acceptés.</i></p></div>
+
+        <form method="post" action="{{ url_for('page_4bis') }}">
+            <div>
+                <label for="nom">Votre nom :</label><br>
+                <input type="text" name="nom" required value="Grothendieck">
+            </div>
+            <div>
+                <label for="prenom">Votre prénom :</label><br>
+                <input type="text" name="prenom" required value="Alexandre">
+            </div>
+            <div>
+                <label for="pseudo">Votre pseudo :</label><br>
+                <input type="text" name="pseudo" required value="Schurik"><br>
+            </div>
+            <div>
+                <p>Votre sexe :</p>
+                <input type="radio" name="sexe" id="sexe" value="femelle" checked>
+                <label for="F">Femelle</label>
+            </div>
+            <div>
+                <input type="radio" name="sexe" id="sexe" value="male" checked>
+                <label for="M">Mâle</label><br><br>
+
+            <input type="submit" value="Valider">
+            </div>
+        </form>
+
+        <p><a href="{{ url_for('homepage') }}">Retour au menu</a></p>
+    </body>
+</html>

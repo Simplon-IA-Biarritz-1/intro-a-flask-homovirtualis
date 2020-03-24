@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+      <title>Homepage</title>
+      <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+      <h1>Menu</h1>
+      <div><pa>Version 1</pa></div>
+      <p><a href="{{ url_for('page_1') }}">Question 1 - "Hello World!" sans HTML/CSS</a></p>
+      <p><a href="{{ url_for('page_2') }}">Question 2 - "Hello World!" avec HTML/CSS</a></p>
+      <p><a href="{{ url_for('page_3') }}">Question 3 - Deux pages</a></p>
+      <p><a href="{{ url_for('page_4') }}">Question 4 - Formulaire</a></p>
+      <p><a href="{{ url_for('page_5') }}">Question 5 - Création d'une base de données SQL</a></p>
+      <p><a href="{{ url_for('page_6') }}">Question 6 - Listing des utilisateurs dans la base de données</a></p>
+      <p><a href="{{ url_for('page_7') }}">Question 7 - Statistiques d'un dataframe<a></p>
+      <p><a href="{{ url_for('page_8') }}">Question 8 - Prédiction</a></p>
+    </body>      
+</html>
