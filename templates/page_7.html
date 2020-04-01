@@ -6,7 +6,20 @@
     </head>
     <body>
         <h1>Question 7 - Statistiques d'un dataframe</h1>
-        <h1>WORK IN PROGRESS</h1>
+        <h2>Sélectionnez votre fichier :</h2>
+        <p>(Seuls les fichiers de types CSV et TSV sont pris en charge pour le moment)</p>
+        <form method="post" action="{{ url_for('page_7bis') }}" enctype="multipart/form-data">
+            <dl>
+            		<p>
+            			<input type="file" name="file" \
+            			accept=".csv, .tsv" \
+            			autocomplete="off" required>
+            		</p>
+            </dl>
+            <p>
+            		<input type="submit" value="Valider">
+            	</p>
+        </form>
         <p><a href="{{ url_for('homepage') }}"> Retourner à la page d'accueil </a></p>
     </body>
 </html>
